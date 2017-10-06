@@ -24,7 +24,7 @@ class transaction(models.Model):
 	curr_date = models.DateTimeField(null=True, default= None);
 	remark = models.TextField(null=True, default=None);
 
-class audit_kahasra(models.Model):
+class audit_khasra(models.Model):
 	_id = models.AutoField(primary_key=True);
 	block_id = models.ForeignKey(blocks, null=False, default=None);
 	mohalla_name = models.CharField(max_length=50, null=True, default=None);
